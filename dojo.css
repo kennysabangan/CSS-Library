@@ -3,12 +3,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
   }
       
 /* Fixed width container class that will "auto-center" itself */
 .container {
-width: 1200px;
-margin: 0 auto;
+    width: 1200px;
+    margin: 0 auto;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+.flex-col {
+    flex-direction: column;
 }
 
 /* Add your favorite button style from the Button Up assignment and call it .btn */
@@ -18,8 +30,7 @@ margin: 0 auto;
     justify-content: center;
     background-color: rgb(42,119,229);
     color: whitesmoke;
-    width: 10em;
-    height: 2em;
+    padding: 10px;
     border: 3px solid black;
     box-shadow: 3px 3px 0px black;
     font-weight: lighter;
@@ -35,6 +46,18 @@ margin: 0 auto;
     padding: 20px;
     margin: 10px;
     text-align: center;
+}
+
+.col-1 {
+    flex: 1;
+}
+
+.col-2 {
+    flex: 2;
+}
+
+.col-3 {
+    flex: 3;
 }
 
 /* Add the .navbar class(es) from the Flex Navbar assignment */
@@ -64,20 +87,12 @@ li {
     list-style-type: none;
 }
 
-a {
+li > a {
     color: rgba(190,190,190, 60%);
 }
 
 .active {
     color: white;
-}
-
-.btn {
-    height: 30px;
-    width: 75px;
-    background-color: #16A2B9;
-    border: 3px solid black;
-    box-shadow: 3px 3px 1px black;
 }
 
 /* Continue adding any cool classes that you have made / will make */
@@ -89,4 +104,18 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+.search {
+    display: flex;
+    margin-top: 50px;
+    width: 10em;
+    height: 1.75em;
+    color: rgb(57,169,169);
+    border: 2px solid rgb(57,169,169);
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    font-weight: bold;
 }
